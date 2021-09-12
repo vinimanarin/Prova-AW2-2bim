@@ -22,7 +22,7 @@ $_SESSION['prod'] += $consumo_m;
 
 echo "O consumo mensal de energia total dos equipamentos adicionados é de: ", $_SESSION['prod'] ," kW/h";
 
-fwrite($file, " - Consumo Final é de:".$_SESSION['prod']."\n");
+fwrite($file, " - Consumo Final:".$_SESSION['prod']."\n");
 
 fclose($file);
 $_SESSION['prod'] = 0;
